@@ -63,7 +63,8 @@ int main(void) {
 
   InitTimer();
   sei();
-  int pos = DIV - 1;
+  // Set to the opposite phase initially, so that a particle can be held at the middle point.
+  int pos = DIV / 2;
   int speed = 1;
   const int kPeriod = DIV * 2;
   char auto_mode = 0;
